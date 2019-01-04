@@ -5,16 +5,25 @@ import React from 'react'
 // }
 
 //ES6 version
+// const Greet = (props) => {
+//     console.log(props)
+//     return (
+//         <div>
+//             <h1>Hello {props.name} a.k.a {props.godName}</h1>
+//             {props.children}
+//         </div>
+//     )
+// }
+
 const Greet = (props) => {
-    console.log(props)
+    const {name, godName, children} = props
     return (
         <div>
-            <h1>Hello {props.name} a.k.a {props.godName}</h1>
-            {props.children}
+            <h1>Hello {name} a.k.a {godName}</h1>
+            {children}
         </div>
     )
 }
-
 
 
 export default Greet
