@@ -1,18 +1,37 @@
 import React, { Component } from 'react';
 // import logo from './logo.svg';
 import './App.css';
+import UserGreeting from './components/UserGreeting';
+import NameList from './components/NameList';
+import Stylesheet from './components/Stylesheet';
+import Inline from './components/Inline';
 // import Greet from './components/Greet';
 // import Welcome from './components/Welcome'
 // import Hello from './components/Hello'
 // import Message from './components/Message'
 // import Counter from './components/Counter'
 //import FunctionClick from './components/FunctionClick'
-import ClassClick from './components/ClassClick'
+//import ClassClick from './components/ClassClick'
+//import EventBind from './components/EventBind';
+//import ParentComponent from './components/ParentComponent';
+
+import './appStyles.css'
+import styles from './appStyles.module.css'
 
 class App extends Component {
   render() {
     return (
       <div className="App">
+      
+      <h1 className="error">Error</h1>
+      <h1 className={styles.success}>Success</h1>
+      {/* <Inline/> */}
+      {/* <Stylesheet primary={true}/> */}
+      {/* <NameList/> */}
+      {/* <UserGreeting /> */}
+
+
+
         {/* <Greet name="Jeremy" godName="Zeus">
           <p>This is children props</p>
         </Greet>
@@ -30,7 +49,9 @@ class App extends Component {
           <p>The God of War</p>
         </Greet> */}
         {/* <FunctionClick/> */}
-        <ClassClick/>
+        {/* <ClassClick/> */}
+        {/* <EventBind/> */}
+        {/* <ParentComponent/> */}
       </div>
     );
   }
